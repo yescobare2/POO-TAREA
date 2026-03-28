@@ -7,6 +7,7 @@ public class Main {
 		Rectangulo();
 		Producto();
 		Cuenta();
+		Libro();
 
 	}
 	//ejercicio 1
@@ -61,6 +62,21 @@ public class Main {
         miAhorro.retirar(1000); // Esto debe fallar por saldo insuficiente
         miAhorro.retirar(150);  // Esto debe funcionar
         miAhorro.mostrarSaldo();
+    }
+    //ejercicio 5
+    public static void Libro() {
+        System.out.println("LIBROS CON MAS DE 300 PAGINAS");
+        Libro l1 = new Libro("La teoria de Kim", "Jay Sandoval", 450);
+        Libro l2 = new Libro("El jardin de las mariposas", "Dot Hutchinson", 236);
+        Libro l3 = new Libro("Al final mueren los dos", "Adam silvera", 255);
+        
+        Libro[] biblioteca = {l1, l2, l3};
+        System.out.println("Listado de libros que cumplen la condición (>300 páginas):");
+        for (Libro l : biblioteca) {
+            if (l.esLargo()) {
+                System.out.println("- " + l.getTitulo());
+            }
+        }
     }
     }
     
