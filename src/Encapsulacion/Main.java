@@ -6,6 +6,7 @@ public class Main {
 		Persona();
 		Rectangulo();
 		Producto();
+		Cuenta();
 
 	}
 	//ejercicio 1
@@ -51,6 +52,15 @@ public class Main {
         p2.aplicarDescuento(10); // 10% de descuento
         p1.mostrarInformacion();
         p2.mostrarInformacion();
+    }
+    //ejercicio 4
+    public static void Cuenta() {
+        System.out.println("CUENTA BANCARIA");
+        Cuenta miAhorro = new Cuenta("Estudiante", 500);
+        miAhorro.depositar(250);
+        miAhorro.retirar(1000); // Esto debe fallar por saldo insuficiente
+        miAhorro.retirar(150);  // Esto debe funcionar
+        miAhorro.mostrarSaldo();
     }
     }
     
