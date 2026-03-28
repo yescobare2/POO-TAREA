@@ -4,8 +4,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		Persona();
+		Rectangulo();
+		Producto();
 
 	}
+	//ejercicio 1
     private static void Persona()  {
     	Persona persona1 = new Persona("Yesmy", "Escobar", 19 );
     	Persona persona2 = new Persona("Franklin", "Jimenez", 19);
@@ -17,7 +20,7 @@ public class Main {
     	System.out.println(persona2.mostrar());
     	System.out.println(persona3.mostrar());
     }
-    
+    //ejercicio 2
     private static void Rectangulo() {
         System.out.println("AREA DE RECTANGULO");
 
@@ -38,6 +41,16 @@ public class Main {
             System.out.println("Ambos tienen la misma area");
         }
     
+    }
+    //ejercicio 3
+    public static void Producto() {
+        System.out.println("PRODUCTOS CON DESCUENTO");
+        Producto p1 = new Producto("A101", "Monitor Gaming", 2500.00);
+        Producto p2 = new Producto("B202", "Teclado Mecánico", 600.00);
+        p1.aplicarDescuento(15); // 15% de descuento
+        p2.aplicarDescuento(10); // 10% de descuento
+        p1.mostrarInformacion();
+        p2.mostrarInformacion();
     }
     }
     
