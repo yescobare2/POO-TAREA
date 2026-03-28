@@ -5,7 +5,7 @@ public class Libro {
     private String autor;
     private int paginas;
 
-    // Constructor para inicializar los datos del libro
+    // Constructor 
     public Libro(String titulo, String autor, int paginas) {
         this.titulo = titulo;
         this.autor = autor;
@@ -17,7 +17,7 @@ public class Libro {
         return paginas > 300;
     }
 
-    // Método para obtener el título (usado en el listado del main)
+    // Método para obtener el título del libro
     public String getTitulo() {
         return titulo;
     }

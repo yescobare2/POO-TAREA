@@ -8,7 +8,7 @@ public class Main {
 		Producto();
 		Cuenta();
 		Libro();
-
+        Calculadora();
 	}
 	//ejercicio 1
     private static void Persona()  {
@@ -77,6 +77,16 @@ public class Main {
                 System.out.println("- " + l.getTitulo());
             }
         }
+    }
+    //ejercicio 6
+    public static void Calculadora() {
+        System.out.println("\n--- 6. CLASE CALCULADORA ---");
+        Calculadora calc = new Calculadora();
+        double a = 10, b = 2;
+        double c = 0;
+        System.out.println("Suma: " + calc.sumar(a, b));
+        System.out.print("Validación División entre cero: ");
+        calc.dividir(a, c);
     }
     }
     
