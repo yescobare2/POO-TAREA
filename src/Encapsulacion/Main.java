@@ -9,6 +9,7 @@ public class Main {
 		Cuenta();
 		Libro();
         Calculadora();
+        Fecha();
 	}
 	//ejercicio 1
     private static void Persona()  {
@@ -88,6 +89,18 @@ public class Main {
         System.out.print("Validación División entre cero: ");
         calc.dividir(a, c);
     }
+    //ejercicio 7
+    public static void Fecha() {
+        System.out.println("\n--- 7. CLASE FECHA ---");
+        Fecha f1 = new Fecha(12, 5, 2024);
+        Fecha f2 = new Fecha(35, 1, 2026);
+        Fecha f3 = new Fecha(10, 15, 2023);
+        
+        Fecha[] fechas = {f1, f2, f3};
+        for (Fecha f : fechas) {
+            System.out.println("Fecha " + f.imprimir() + " - ¿Es válida?: " + (f.esValida() ? "SÍ" : "NO"));
+        }
     }
+}
     
 
